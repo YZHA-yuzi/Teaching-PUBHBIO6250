@@ -1,6 +1,7 @@
 ---
 title: "PUBHBIO 6250: Regression Methods for the Health Sciences"
 subtitle: "Fall 2026"
+author: "Yuzi Zhang, Ph.D."
 format:
   html:
     theme: cosmo
