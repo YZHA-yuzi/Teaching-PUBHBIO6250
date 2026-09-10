@@ -1,0 +1,18 @@
+---
+title: "PUBHBIO 6250: Regression Methods for the Health Sciences"
+subtitle: "Fall 2026"
+format:
+  html:
+    theme: cosmo
+    toc: false
+    page-layout: full
+---
+
+## Course Resources for Fall 2026
+
+### Responses to Muddiest Points
+
+Answers, explanations, and clarifications addressing questions submitted by students.
+
+- 📌 **[Responses to Muddiest Points from Week 2 - Logistic Regression Part 1](PUBHBIO6250_MuddyPoints_AU26_Week2.html)**  
+  
