@@ -16,4 +16,4 @@ format:
 Answers, explanations, and clarifications addressing questions submitted by students.
 
 - 📌 **[Responses to Muddiest Points from Week 2 - Logistic Regression Part 1](PUBHBIO6250_MuddyPoints_AU26_Week2.html)**  
-  
+- 📌 **[Responses to Muddiest Points from Week 3 - Logistic Regression Part 2](PUBHBIO6250_MuddyPoints_AU26_Week3.html)** 
