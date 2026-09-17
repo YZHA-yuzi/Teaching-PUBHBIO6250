@@ -2725,7 +2725,7 @@ margin: 1em 0;
 <li><code>bmi</code>: maternal body mass index (continuous)</li>
 </ul></li>
 </ul>
-<div id="de8e227d" class="cell" data-execution_count="1">
+<div id="11933a78" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">use</span> <span class="st">&quot;PTB_morevar.dta&quot;</span>, <span class="kw">clear</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">describe</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -2757,7 +2757,7 @@ Sorted by: </code></pre>
 &amp;\text{logit}(Pr(\texttt{preterm} = 1 | \texttt{bmi}, \texttt{age})) = \beta_0 + \beta_{1} \texttt{age} + \beta_{2} \texttt{bmi} + \beta_3 \texttt{age} \times \texttt{bmi}
 \end{aligned}
 </span></p>
-<div id="3452884c" class="cell" data-execution_count="2">
+<div id="4b0a37c3" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">logistic</span> preterm c.age##c.bmi</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
@@ -2797,7 +2797,7 @@ Note: _cons estimates baseline odds.</code></pre>
 <li><strong>Effect modifier</strong>: <span style="color: #BB0000;"><strong>BMI</strong></span>.</li>
 </ul>
 <p>Visualize interaction on <strong>logit scale</strong>:</p>
-<div id="3a8c9c6b" class="cell" data-execution_count="3">
+<div id="71962e18" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>margins, <span class="fu">at</span>(age=(15(5)45) bmi=(21 27 34)) <span class="kw">predict</span>(<span class="kw">xb</span>)</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>marginsplot, noci <span class="kw">recast</span>(<span class="kw">line</span>) <span class="co">///</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="bn">ytitle</span>(<span class="st">&quot;Log-odds of preterm birth&quot;</span>) <span class="bn">xtitle</span>(<span class="st">&quot;Age&quot;</span>) <span class="co">///</span></span>
@@ -3352,7 +3352,7 @@ Variables that uniquely identify margins: age bmi</code></pre>
 </div>
 </div>
 <p>Visualize interaction on <strong>probability scale</strong>:</p>
-<div id="37953c97" class="cell" data-execution_count="4">
+<div id="099ab06d" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>margins, <span class="fu">at</span>(age=(15(5)45) bmi=(21 27 34))</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>marginsplot, noci <span class="kw">recast</span>(<span class="kw">line</span>) <span class="co">///</span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="bn">ytitle</span>(<span class="st">&quot;Predicted probability of preterm birth&quot;</span>) <span class="bn">xtitle</span>(<span class="st">&quot;Age&quot;</span>) <span class="co">///</span></span>
@@ -3920,7 +3920,7 @@ Variables that uniquely identify margins: age bmi</code></pre>
 </ul></li>
 </ul>
 <p>Visualize interaction on <strong>logit scale</strong>:</p>
-<div id="e9a2c54c" class="cell" data-execution_count="5">
+<div id="3c4d2b4f" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>margins, <span class="fu">at</span>(bmi=(15(5)50) age=(23 29 35)) <span class="kw">predict</span>(<span class="kw">xb</span>)</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>marginsplot, noci <span class="kw">recast</span>(<span class="kw">line</span>) <span class="co">///</span></span>
@@ -4460,7 +4460,7 @@ Variables that uniquely identify margins: bmi age</code></pre>
 </div>
 </div>
 <p>Visualize interaction on <strong>probability scale</strong>:</p>
-<div id="61df142c" class="cell" data-execution_count="6">
+<div id="afa0eda1" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>margins, <span class="fu">at</span>(bmi=(15(5)50) age=(23 29 35))</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>marginsplot, noci <span class="kw">recast</span>(<span class="kw">line</span>) <span class="co">///</span></span>
@@ -4998,8 +4998,16 @@ Variables that uniquely identify margins: bmi age</code></pre>
     format</code></pre>
 </div>
 </div>
-<p><strong>Interpretation</strong>: - Likewise, the effect of BMI on the log-odds of preterm birth is steeper at some ages than at others. This is the same interaction as above, but viewed from the other direction. - <strong>Neither framing is more “correct”; which one should be used in your interpretation depends on which variable is your primary exposure of interest and which is the effect modifier.</strong></p>
-<p><strong>Takeaway</strong>: - A single interaction term, <span class="math inline">\texttt{age} \times \texttt{bmi}</span>, captures <em>both</em> of these associations at once. That’s exactly what “interaction works in both directions” means. - The <span class="math inline">p=0.094</span> is greater than 0.05 but smaller than 0.1, thus the hypothesis testing result is marginal. In such a case, we shouldn’t over-claim a strong effect modification. However, the plots above illustrate how to visualize and interpret an interaction between two continuous variables.</p>
+<p><strong>Interpretation</strong>:</p>
+<ul>
+<li>Likewise, the effect of BMI on the log-odds of preterm birth is steeper at some ages than at others. This is the same interaction as above, but viewed from the other direction.</li>
+<li><strong>Neither framing is more “correct”; which one should be used in your interpretation depends on which variable is your primary exposure of interest and which is the effect modifier.</strong></li>
+</ul>
+<p><strong>Takeaway</strong>:</p>
+<ul>
+<li>A single interaction term, <span class="math inline">\texttt{age} \times \texttt{bmi}</span>, captures <em>both</em> of these associations at once. That’s exactly what “interaction works in both directions” means.</li>
+<li>The <span class="math inline">p=0.094</span> is greater than 0.05 but smaller than 0.1, thus the hypothesis testing result is marginal. In such a case, we shouldn’t over-claim a strong effect modification. However, the plots above illustrate how to visualize and interpret an interaction between two continuous variables.</li>
+</ul>
 </section>
 </section>
 <section id="recap" class="level2">
