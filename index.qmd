@@ -20,3 +20,4 @@ Answers, explanations, and clarifications addressing questions submitted by stud
 - 📌 **Responses to Muddiest Points from Week 5 - Poisson Regression Part 1** 
   * 🎥 **[Slides for the Video](PUBHBIO6250_MuddyPoints_AU26_Week5_SLIDE.html)**
   * 📄 **[Written Document](PUBHBIO6250_MuddyPoints_AU26_Week5_Doc.html)**
+- 📌 **[Responses to Muddiest Points from Week 6 - Poisson Regression Part 2](PUBHBIO6250_MuddyPoints_AU26_Week6.html)**  
